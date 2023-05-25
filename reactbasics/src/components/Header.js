@@ -5,7 +5,7 @@ export default function Header(props) {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
               {props.title}
@@ -61,8 +61,8 @@ export default function Header(props) {
 }
 
 Header.propTypes = {
-  title: React.PropTypes.string,
-  SearchBar: React.PropTypes.bool.isRequired,
+  title: PropTypes.string,
+  SearchBar: PropTypes.bool.isRequired,
 }; // This is how we can set default props
 Header.defaultProps = {
   title: "@dyells07",
